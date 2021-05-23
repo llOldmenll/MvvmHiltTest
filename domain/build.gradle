@@ -1,0 +1,23 @@
+plugins {
+    id 'java-library'
+    id 'kotlin'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+dependencies {
+    implementation androidLibs.kotlin_stdlib
+
+    // Rx
+    implementation libs.rxjava
+    implementation libs.rxkotlin
+
+    // Test frameworks
+    testImplementation testLibs.junit
+    testImplementation testLibs.mockito
+    testImplementation testLibs.mockito_inline
+    testImplementation testLibs.mockito_kotlin
+}
