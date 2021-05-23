@@ -57,5 +57,11 @@ dependencies {
     implementation libs.hilt
     kapt libs.hilt_compiler
 
+    // Test frameworks
+    testImplementation testLibs.junit
+    testImplementation testLibs.mockito
+    testImplementation testLibs.mockito_inline
+    testImplementation testLibs.mockito_kotlin
+
     api project(path: ':domain')
 }

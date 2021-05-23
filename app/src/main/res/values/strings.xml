@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">MvvmHiltTest</string>
+    <string name="repositories">Repositories</string>
+    <string name="error">Error</string>
+    <string name="owner">Owner</string>
+    <string name="description">Description</string>
+    <string name="language">Language</string>
+    <string name="type">Type</string>
+    <string name="createdOn">Created on</string>
+    <string name="updatedOn">Updated on</string>
+    <string name="repository">Repository</string>
+    <string name="ownerWebsite">Owner website</string>
 </resources>

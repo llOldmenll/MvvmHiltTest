@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/view_margin_min"
+    android:layout_marginBottom="@dimen/view_margin_micro">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/group_view_padding_min">
+
+        <ImageView
+            android:id="@+id/vAvatar"
+            android:layout_width="@dimen/avatar_preview_size"
+            android:layout_height="@dimen/avatar_preview_size"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_placeholder"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_placeholder"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/vName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/text_margin_medium"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_big"
+            app:layout_constraintBottom_toTopOf="@+id/vType"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/vAvatar"
+            app:layout_constraintTop_toTopOf="@+id/vAvatar"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:text="test/for_test" />
+
+        <TextView
+            android:id="@+id/vType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/vCreationDate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/vName"
+            app:layout_constraintTop_toBottomOf="@+id/vName"
+            tools:text="repository" />
+
+        <TextView
+            android:id="@+id/vCreationDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/vAvatar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/vName"
+            app:layout_constraintTop_toBottomOf="@+id/vType"
+            tools:text="12 Jun 2012" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
